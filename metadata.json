@@ -1,0 +1,6 @@
+{
+  "name": "IT Helpdesk & Computer Problem Reporting System",
+  "description": "ระบบแจ้งปัญหาการใช้โปรแกรมระบบบัญชีสหกรณ์",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

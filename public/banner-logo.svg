@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="25%" stop-color="#e0f2fe"/>
+      <stop offset="60%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+
+    <linearGradient id="blueWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#0369a1" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="cyanArcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="30%" stop-color="#0369a1"/>
+      <stop offset="70%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+
+    <linearGradient id="goldTextGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+
+    <!-- Filters & Shadows -->
+    <filter id="shadowLight" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0369a1" flood-opacity="0.18"/>
+    </filter>
+    <filter id="shadowPill" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#075985" flood-opacity="0.25"/>
+    </filter>
+    <filter id="shadowEmblem" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0369a1" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Dotted Pattern -->
+    <pattern id="dotPattern" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.2" fill="#0284c7" fill-opacity="0.22"/>
+    </pattern>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="1500" height="320" rx="28" fill="url(#bgGrad)" stroke="#bae6fd" stroke-width="2"/>
+
+  <!-- Flowing Waves & Curved Layers -->
+  <path d="M-50 280 Q 350 170, 800 270 T 1550 220 L 1550 350 L -50 350 Z" fill="#38bdf8" fill-opacity="0.35"/>
+  <path d="M-50 295 Q 400 220, 950 300 T 1550 260 L 1550 350 L -50 350 Z" fill="#0284c7" fill-opacity="0.3"/>
+  <path d="M-50 310 Q 500 260, 1050 310 T 1550 285 L 1550 350 L -50 350 Z" fill="#0369a1" fill-opacity="0.5"/>
+
+  <!-- Left Dots Grid Decor -->
+  <rect x="25" y="20" width="140" height="220" fill="url(#dotPattern)"/>
+  <!-- Right Dots Grid Decor -->
+  <rect x="1340" y="20" width="130" height="200" fill="url(#dotPattern)"/>
+
+  <!-- White Ribbon Waves Background -->
+  <path d="M 0 160 C 250 60, 450 110, 580 60 C 450 40, 250 40, 0 100 Z" fill="#ffffff" fill-opacity="0.5"/>
+  <path d="M 1500 130 C 1300 50, 1100 80, 980 40 C 1100 30, 1300 30, 1500 70 Z" fill="#ffffff" fill-opacity="0.45"/>
+
+  <!-- ============================================================== -->
+  <!-- 1. LEFT: OFFICIAL CAD SEAL (ตราสัญลักษณ์ กรมตรวจบัญชีสหกรณ์) -->
+  <!-- ============================================================== -->
+  <g transform="translate(190, 160)" filter="url(#shadowEmblem)">
+    <!-- Cyan Glow Arc / Swoosh surrounding seal -->
+    <path d="M -135 40 C -150 -60, -80 -140, 40 -145 C 120 -150, 148 -90, 142 -50" fill="none" stroke="url(#cyanArcGrad)" stroke-width="16" stroke-linecap="round" opacity="0.85"/>
+
+    <!-- Outer Seal Circles -->
+    <circle r="126" fill="#ffffff"/>
+    <circle r="120" fill="#0284c7" stroke="#38bdf8" stroke-width="4"/>
+    <circle r="110" fill="#e0f2fe"/>
+    <circle r="104" fill="#0ea5e9" stroke="#ffffff" stroke-width="2.5"/>
+
+    <!-- Emblem Inner Sky -->
+    <circle r="100" fill="#38bdf8"/>
+
+    <!-- Clouds in emblem background -->
+    <path d="M-65 -30 Q-55 -48 -38 -42 Q-22 -54 0 -42 Q22 -54 38 -42 Q55 -48 65 -30 Q75 -10 65 12 Q55 22 42 22 L-42 22 Q-55 22 -65 12 Z" fill="#ffffff" fill-opacity="0.85"/>
+
+    <!-- Naga Serpents (Left & Right) -->
+    <!-- Left Naga (Green Body, Red Spine/Fins, Gold Details) -->
+    <path d="M-72 38 C-82 12, -66 -22, -48 -38 C-42 -44, -36 -50, -32 -38 C-38 -22, -55 0, -50 38 Z" fill="#16a34a" stroke="#dc2626" stroke-width="2.5"/>
+    <path d="M-66 22 C-72 6, -60 -16, -44 -28" stroke="#facc15" stroke-width="2.5" fill="none"/>
+    <!-- Right Naga (Green Body, Red Spine/Fins, Gold Details) -->
+    <path d="M72 38 C82 12, 66 -22, 48 -38 C42 -44, 36 -50, 32 -38 C38 -22, 55 0, 50 38 Z" fill="#16a34a" stroke="#dc2626" stroke-width="2.5"/>
+    <path d="M66 22 C72 6, 60 -16, 44 -28" stroke="#facc15" stroke-width="2.5" fill="none"/>
+
+    <!-- Throne / Pedestal (Lotus Base) -->
+    <path d="M-48 46 L48 46 L38 64 L-38 64 Z" fill="#ca8a04" stroke="#854d0e" stroke-width="1.5"/>
+    <path d="M-42 53 L42 53" stroke="#fef08a" stroke-width="2.5"/>
+    <path d="M-38 35 Q0 26 38 35 L44 46 L-44 46 Z" fill="#dc2626" stroke="#991b1b" stroke-width="1.5"/>
+
+    <!-- Deity Figure (เทพยดา / เทวดาประจำกรม) -->
+    <!-- Crown / Chada (ยอดชฎา) -->
+    <path d="M0 -78 L-14 -40 L14 -40 Z" fill="#dc2626" stroke="#ca8a04" stroke-width="2"/>
+    <path d="M0 -75 L-5 -45 L5 -45 Z" fill="#facc15"/>
+    <circle cx="0" cy="-80" r="4" fill="#facc15"/>
+
+    <!-- Deity Face -->
+    <circle cx="0" cy="-32" r="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="-4" cy="-33" r="1.3" fill="#1e293b"/>
+    <circle cx="4" cy="-33" r="1.3" fill="#1e293b"/>
+    <path d="M-3.5 -27 Q0 -24 3.5 -27" stroke="#e11d48" stroke-width="1.3" fill="none"/>
+
+    <!-- Torso & Traditional Costume -->
+    <path d="M-17 -19 L17 -19 L20 12 L-20 12 Z" fill="#ffffff" stroke="#ca8a04" stroke-width="1.5"/>
+    <path d="M-11 -19 L0 6 L11 -19" stroke="#dc2626" stroke-width="2.5" fill="none"/>
+    <circle cx="0" cy="-7" r="4" fill="#ca8a04"/>
+
+    <!-- Arms & Divine Props -->
+    <path d="M-17 -17 C-29 -10, -31 6, -22 20" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+    <path d="M17 -17 C29 -10, 31 6, 22 20" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+    <!-- Sacred Sword / Prop -->
+    <path d="M-24 20 L-24 -22 L-22 -22 L-22 20 Z" fill="#94a3b8" stroke="#475569" stroke-width="1.2"/>
+    <circle cx="22" cy="-11" r="6.5" fill="#facc15" stroke="#ca8a04" stroke-width="1.5"/>
+
+    <!-- Meditation Legs -->
+    <path d="M-33 26 Q0 39 33 26 L27 37 Q0 46 -27 37 Z" fill="#ffffff" stroke="#ca8a04" stroke-width="1.5"/>
+    <path d="M-22 30 Q0 38 22 30" stroke="#dc2626" stroke-width="2.2" fill="none"/>
+
+    <!-- Bottom Ribbon with text 'กรมตรวจบัญชีสหกรณ์' -->
+    <path d="M-88 52 Q 0 110 88 52 Q 72 104 0 108 Q -72 104 -88 52 Z" fill="#ffffff" stroke="#0284c7" stroke-width="2.2"/>
+    <path id="ribbonPath" d="M-80 72 Q 0 118 80 72" fill="none"/>
+    <text font-family="'Sarabun', 'Prompt', 'Noto Sans Thai', sans-serif" font-size="16" font-weight="bold" fill="#0f172a" text-anchor="middle">
+      <textPath href="#ribbonPath" startOffset="50%" text-anchor="middle">
+        กรมตรวจบัญชีสหกรณ์
+      </textPath>
+    </text>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 2. CENTER: MAIN TYPOGRAPHY & BANNER CAPSULE -->
+  <!-- ============================================================== -->
+  <g transform="translate(710, 0)">
+    <!-- Main Title: ระบบแจ้งปัญหา -->
+    <text x="0" y="116" font-family="'Prompt', 'Sarabun', 'Noto Sans Thai', sans-serif" font-size="70" font-weight="900" fill="#0f294a" text-anchor="middle" letter-spacing="1">
+      ระบบแจ้งปัญหา
+    </text>
+
+    <!-- Speech Bubble Icon with Exclamation Mark -->
+    <g transform="translate(215, 38)" filter="url(#shadowLight)">
+      <path d="M 32 0 C 52 0, 64 14, 64 32 C 64 43, 57 54, 44 59 L 50 77 L 30 63 C 27 63, 23 63 18 62 C 2 59, -7 45, -7 32 C -7 14, 11 0, 32 0 Z" fill="url(#bubbleGrad)"/>
+      <text x="29" y="45" font-family="'Prompt', 'Arial Black', sans-serif" font-size="40" font-weight="900" fill="#ffffff" text-anchor="middle">!</text>
+      <!-- Sparkle Rays -->
+      <path d="M 59 -7 L 71 -16" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 77 9 L 91 9" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 70 29 L 84 38" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Blue Capsule Pill with Text: 'การใช้โปรแกรมระบบบัญชีสหกรณ์' -->
+    <g transform="translate(0, 175)" filter="url(#shadowPill)">
+      <!-- Pill Container -->
+      <rect x="-355" y="-38" width="710" height="76" rx="38" fill="url(#pillGrad)" stroke="#38bdf8" stroke-width="3.5"/>
+      <text x="0" y="14" font-family="'Prompt', 'Sarabun', 'Noto Sans Thai', sans-serif" font-size="37" font-weight="800" text-anchor="middle">
+        <tspan fill="#ffffff">การใช้โปรแกรม</tspan><tspan fill="url(#goldTextGrad)">ระบบบัญชีสหกรณ์</tspan>
+      </text>
+    </g>
+
+    <!-- Subtitle Bar: พัฒนาโดย สำนักงานตรวจบัญชีสหกรณ์สมุทรสงคราม -->
+    <g transform="translate(0, 256)">
+      <!-- Left Deco Line & Dot -->
+      <line x1="-310" y1="0" x2="-240" y2="0" stroke="#0284c7" stroke-width="2.5"/>
+      <circle cx="-240" cy="0" r="4" fill="#0284c7"/>
+
+      <!-- Gear Icon -->
+      <g transform="translate(-205, 0)">
+        <circle cx="0" cy="0" r="11" fill="#0369a1"/>
+        <path d="M-3 -15 L3 -15 L2 -10 L-2 -10 Z" fill="#0369a1"/>
+        <path d="M-3 10 L3 10 L2 15 L-2 15 Z" fill="#0369a1"/>
+        <path d="M-15 -3 L-15 3 L-10 2 L-10 -2 Z" fill="#0369a1"/>
+        <path d="M10 -3 L10 3 L15 2 L15 -2 Z" fill="#0369a1"/>
+        <circle cx="0" cy="0" r="5" fill="#ffffff"/>
+      </g>
+
+      <text x="10" y="7" font-family="'Sarabun', 'Prompt', 'Noto Sans Thai', sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="middle" letter-spacing="0.5">
+        <tspan fill="#0369a1">พัฒนาโดย </tspan>สำนักงานตรวจบัญชีสหกรณ์สมุทรสงคราม
+      </text>
+
+      <!-- Right Deco Line & Dot -->
+      <circle cx="245" cy="0" r="4" fill="#0284c7"/>
+      <line x1="245" y1="0" x2="315" y2="0" stroke="#0284c7" stroke-width="2.5"/>
+    </g>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 3. RIGHT: 3D COMPUTER MONITOR, CHECKLIST & GEAR -->
+  <!-- ============================================================== -->
+  <g transform="translate(1260, 148)" filter="url(#shadowLight)">
+    <!-- Monitor Stand -->
+    <path d="M-16 92 L16 92 L24 120 L-24 120 Z" fill="#64748b"/>
+    <ellipse cx="0" cy="122" rx="46" ry="8" fill="#475569"/>
+
+    <!-- Monitor Outer Body (Blue Bezel) -->
+    <rect x="-115" y="-102" width="230" height="186" rx="18" fill="#0284c7" stroke="#0369a1" stroke-width="3.5"/>
+
+    <!-- Screen Display -->
+    <rect x="-101" y="-88" width="202" height="150" rx="9" fill="url(#screenGrad)"/>
+
+    <!-- Camera / Sensor Dot -->
+    <circle cx="0" cy="-95" r="2.8" fill="#ffffff"/>
+
+    <!-- Screen UI Elements (Checklist & Dashboard) -->
+    <!-- Left Menu List Rows -->
+    <g transform="translate(-88, -70)">
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="18" height="13" rx="3.5" fill="#38bdf8"/>
+      <rect x="25" y="3" width="60" height="7" rx="3.5" fill="#cbd5e1"/>
+
+      <!-- Row 2 -->
+      <rect x="0" y="22" width="18" height="13" rx="3.5" fill="#38bdf8"/>
+      <rect x="25" y="25" width="70" height="7" rx="3.5" fill="#cbd5e1"/>
+
+      <!-- Row 3 -->
+      <rect x="0" y="44" width="18" height="13" rx="3.5" fill="#38bdf8"/>
+      <rect x="25" y="47" width="52" height="7" rx="3.5" fill="#cbd5e1"/>
+
+      <!-- Row 4 -->
+      <rect x="0" y="66" width="18" height="13" rx="3.5" fill="#38bdf8"/>
+      <rect x="25" y="69" width="64" height="7" rx="3.5" fill="#cbd5e1"/>
+    </g>
+
+    <!-- Right Status Badges on Screen -->
+    <!-- Green Success Checkmark Badge -->
+    <g transform="translate(52, -52)">
+      <circle cx="0" cy="0" r="20" fill="#10b981" filter="url(#shadowLight)"/>
+      <path d="M-8 0 L-2 6 L8 -6" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Orange/Red Alert Badge -->
+    <g transform="translate(52, 10)">
+      <rect x="-24" y="-18" width="48" height="36" rx="9" fill="#f87171" filter="url(#shadowLight)"/>
+      <text x="0" y="9" font-family="'Arial Black', sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">!</text>
+    </g>
+
+    <!-- Floating Sheet / Document on Top Right -->
+    <g transform="translate(74, -108) rotate(8)">
+      <rect x="0" y="0" width="42" height="58" rx="4.5" fill="#ffffff" stroke="#94a3b8" stroke-width="1.8" filter="url(#shadowLight)"/>
+      <line x1="7" y1="13" x2="33" y2="13" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+      <line x1="7" y1="22" x2="29" y2="22" stroke="#94a3b8" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="7" y1="31" x2="25" y2="31" stroke="#94a3b8" stroke-width="2.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Blue 3D Gear Cog at Bottom Right -->
+    <g transform="translate(72, 88)" filter="url(#shadowLight)">
+      <circle cx="0" cy="0" r="28" fill="#0284c7" stroke="#38bdf8" stroke-width="2.5"/>
+      <!-- Teeth -->
+      <path d="M-7 -37 L7 -37 L6 -26 L-6 -26 Z" fill="#0284c7"/>
+      <path d="M-7 26 L7 26 L6 37 L-6 37 Z" fill="#0284c7"/>
+      <path d="M-37 -7 L-37 7 L-26 6 L-26 -6 Z" fill="#0284c7"/>
+      <path d="M26 -7 L26 7 L37 6 L37 -7 Z" fill="#0284c7"/>
+      <path d="M-26 -26 L-17 -17 L-11 -24 L-20 -33 Z" fill="#0284c7"/>
+      <path d="M17 17 L26 26 L33 20 L24 11 Z" fill="#0284c7"/>
+      <path d="M-26 26 L-17 17 L-24 11 L-33 20 Z" fill="#0284c7"/>
+      <path d="M17 -17 L26 -26 L20 -33 L11 -24 Z" fill="#0284c7"/>
+      <!-- Inner hole -->
+      <circle cx="0" cy="0" r="11" fill="#f0f9ff"/>
+    </g>
+  </g>
+</svg>
